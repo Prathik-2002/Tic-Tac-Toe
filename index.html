@@ -1,0 +1,35 @@
+
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="playerContainer">
+        <input type="text" value="Player 1" onchange="playerNameChange(this,0)">
+        <input type="text" value="Player 2" onchange="playerNameChange(this,1)">
+    </div>
+
+    <div class="gridcontainer">
+        <div class="grid">
+            <div class="blocks" onclick="handleClick(this,1)"></div>
+            <div class="blocks" onclick="handleClick(this,2)"></div>
+            <div class="blocks" onclick="handleClick(this,3)"></div>
+            <div class="blocks" onclick="handleClick(this,4)"></div>
+            <div class="blocks" onclick="handleClick(this,5)"></div>
+            <div class="blocks" onclick="handleClick(this,6)"></div>
+            <div class="blocks" onclick="handleClick(this,7)"></div>
+            <div class="blocks" onclick="handleClick(this,8)"></div>
+            <div class="blocks" onclick="handleClick(this,9)"></div>
+        </div>
+    </div>
+</div>
+<div id="newgame" onclick="newGame()">
+    <span>New game</span>
+</div>
+<div class="comment" id="comment">
+</body>
+<script src="script.js"></script>
+</html>
