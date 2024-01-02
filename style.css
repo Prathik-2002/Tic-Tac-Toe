@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(110,100,255);
+    background: linear-gradient(90deg, rgba(110,100,255,1) 0%, rgba(252,108,133,1) 100%);
+}
+.grid{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: rgb(255, 222, 77);
+    padding-top: 10rem;
+}
+.blocks{
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    color: rgba(255, 255, 255, 0.73);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 80px;
+
+
+}
+.blocks:hover{
+    background: rgba(255, 255, 255, 0.273);
+}
+.gridcontainer{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: calc(50% - 4rem);
+    left: 10rem;
+}
+.playerContainer > input{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 7px;
+    border: none;
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 1.5rem;
+
+}
+.playerContainer > input:focus,
+.playerContainer > input:active,
+.playerContainer > input:hover{
+    border: none;
+    outline: none;
+}
+
+.comment{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+#newgame>span {
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+#newgame>span:hover{
+    background: rgba(255, 255, 255, 0.205);
+    cursor: pointer;
+
+
+}
+#newgame{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 992px) {
+    .grid{
+    }
+}
